@@ -25,7 +25,8 @@ searchBtn.addEventListener("click",async ()=>{
      alert("Creature not found")
     }
     const data = await res.json()
-
+    
+    
     creatureName.textContent = data.name.toUpperCase();
     creatureId.textContent = data.id;
     weight.textContent = data.weight;

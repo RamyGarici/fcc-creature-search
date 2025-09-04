@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Creature Searcher</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Creature Searcher</title>
 </head>
 <body>
-  <input id="search-input">
-  <button id="search-button"></button>
-  <div id="main-container">
-    <p id="creature-name"></p>
-    <p id="creature-id"></p>
-    <p id="weight"></p>
-    <p id="height"></p>
-    <p id="types"></p>
-    <p id="hp"></p>
-    <p id="attack"></p>
-    <p id="defense"></p>
-    <p id="special-attack"></p>
-    <p id="special-defense"></p>
-    <p id="speed"></p>
+  <h1 id="title">RPG Searcher App</h1>
+  
+  <div id="container">
+ <!-- Zone de recherche -->
+    <input id="search-input" placeholder="Enter name or ID" required>
+    <button id="search-button">🔍</button>
+
+
+    <div id="main-container">
+      <h2 id="creature-name">—</h2>
+      <p><strong>ID:</strong> <span id="creature-id">—</span></p>
+      <p><strong>Weight:</strong> <span id="weight">—</span></p>
+      <p><strong>Height:</strong> <span id="height">—</span></p>
+
+      <p><strong>Types:</strong> <span id="types">—</span></p>
+
+      <h3>Stats</h3>
+      <p><strong>HP:</strong> <span id="hp">—</span></p>
+      <p><strong>Attack:</strong> <span id="attack">—</span></p>
+      <p><strong>Defense:</strong> <span id="defense">—</span></p>
+      <p><strong>Special Attack:</strong> <span id="special-attack">—</span></p>
+      <p><strong>Special Defense:</strong> <span id="special-defense">—</span></p>
+      <p><strong>Speed:</strong> <span id="speed">—</span></p>
+    </div>
   </div>
-    <script src="./script.js"></script>
+
+  <script src="./script.js"></script>
 </body>
 </html>
